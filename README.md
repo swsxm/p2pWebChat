@@ -1,39 +1,30 @@
 # ChatWebapp
 
-Entwicklung einer P2P-basierten Chat-Webanwendung mit React und Express.
+A  Peer2Peer-based chat application built with **React** and **Express**. 
 
-## Kurzbeschreibung
+## 🚀 Features
 
-Dieses Projekt zielt darauf ab, eine Chat-Webanwendung zu entwickeln, die Peer-to-Peer-Kommunikation unterstützt. Die Anwendung ermöglicht normale Chats sowie Gruppenchats mit zusätzlicher Unterstützung für anonyme Kommunikation. Die Implementierung erfolgt mithilfe von Express und React in einer Docker Umgebung.
+- **User Accounts:** Sign-up and login functionality.
+- **Direct Messaging:** Private 1-on-1 chats between users.
+- **Global Group Chat:** An "All-Chat" feature for public group discussions.
 
-## Features
 
-- **User Accounts:** Benutzer können Konten erstellen und sich anmelden.
-- **Normaler Chat:** Einzelne Benutzer können miteinander chatten.
-- **Gruppenchat:** Alle Benutzer können in einem All-Chat chatten.
-- **Anonymer Chat:** Option für anonyme Kommunikation zwischen Benutzern.
+## 📦 Installation & Setup
 
-## Installation und Ausführung
+You can run the entire application stack using Docker.
 
-Um die Webanwendung in einer Docker-Umgebung auszuführen, folge diesen Schritten:
+1. **Prerequisites**
+   Make sure you have [Docker](https://www.docker.com/) installed on your machine.
 
-1. Stelle sicher, dass Docker auf deinem System installiert ist.
-
-2. Navigiere in das Root-Verzeichnis des Projekts.
-
-3. Kopiere den Inhalt von .env_example in eine neue Datei .env.
-
-4. Führe den folgenden Befehl aus, um die Webanwendung mit Docker Compose zu starten:
-
+2. **Configuration**
+   Navigate to the project root and create your environment file:
    ```bash
+   cp .env_example .env
+   ```
+3. **Start the application**
+   Run the following command to build and start the containers:
+   ```
    docker-compose up
-
-5. Die Webapp ist unter dem NGINX Port erreichbar (Standardkonfig: 4000)
-
-## Architektur
-#### Overview
-![plot](./images/architecture.png)
-#### Peer to Peer State Diagramm
-![plot](./images/Peer2Peer.png)
-#### All Chat (Client Server Chat)
-![plot](./images/AllChat.png)
+   ```
+4. **Access**
+   Once the container is running, the web app is accessible via the NGINX port (Default: 4000). Open your browser and visit: ``` http://localhost:4000 ```
